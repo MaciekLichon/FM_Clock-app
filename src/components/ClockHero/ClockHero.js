@@ -11,7 +11,6 @@ const ClockHero = ({showDetails, setShowDetails, time, abbreviation, city, count
 
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-    console.log(windowWidth);
     useEffect(() => {
         const handleWindowResize = () => {
             setWindowWidth(window.innerWidth);
