@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/FM_Clock-app/static/css/main.42b5211a.css",
-    "main.js": "/FM_Clock-app/static/js/main.7895bf38.js",
+    "main.js": "/FM_Clock-app/static/js/main.c79d7caf.js",
     "static/media/bg-image-nighttime.jpg": "/FM_Clock-app/static/media/bg-image-nighttime.a9c730ff6f3e4a40519b.jpg",
     "static/media/bg-image-daytime.jpg": "/FM_Clock-app/static/media/bg-image-daytime.13c049fcfdc590ddcef0.jpg",
     "static/media/icon-sun.svg": "/FM_Clock-app/static/media/icon-sun.cb7a2aac3be7bf88b4cf17bd97d62fd2.svg",
@@ -10,10 +10,10 @@
     "static/media/icon-moon.svg": "/FM_Clock-app/static/media/icon-moon.83b9f0dbe53bfaab2e1c6dc344545e9c.svg",
     "static/media/icon-arrow-down.svg": "/FM_Clock-app/static/media/icon-arrow-down.4d330a30a2190ce71512b306095fbf41.svg",
     "main.42b5211a.css.map": "/FM_Clock-app/static/css/main.42b5211a.css.map",
-    "main.7895bf38.js.map": "/FM_Clock-app/static/js/main.7895bf38.js.map"
+    "main.c79d7caf.js.map": "/FM_Clock-app/static/js/main.c79d7caf.js.map"
   },
   "entrypoints": [
     "static/css/main.42b5211a.css",
-    "static/js/main.7895bf38.js"
+    "static/js/main.c79d7caf.js"
   ]
 }
