@@ -1,0 +1,154 @@
+@import '../../styles/variables';
+
+.clock__main .container {
+  @media (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 56px;
+  }
+}
+
+.clock__overview {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 48px;
+  font-size: $fs-location_s;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  line-height: 28px;
+
+  @media (min-width: $tablet) {
+    font-size: $fs-location_m;
+    letter-spacing: 3.6px;
+    margin-bottom: 80px;
+    gap: 0;
+  }
+
+  @media (min-width: $desktop) {
+    gap: 16px;
+    margin-bottom: 0;
+  }
+
+  &-daytime {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    line-height: 25px;
+
+    @media (min-width: $tablet) {
+      line-height: 28px;
+    }
+
+    @media (min-width: $desktop) {
+      font-size: $fs-location_l;
+      letter-spacing: 4px;
+    }
+  }
+
+  &-hour {
+    letter-spacing: normal;
+    white-space: nowrap;
+
+    @media (min-width: $tablet) {
+      font-size: 32px;
+    }
+
+    @media (min-width: $desktop) {
+      font-size: 40px;
+    }
+
+    span {
+      font-size: $fs-clock_s;
+      line-height: 1;
+      letter-spacing: -2.5px;
+      font-weight: $fw-bold;
+
+      @media (min-width: $tablet) {
+        font-size: $fs-clock_m;
+        letter-spacing: -4.375px;
+      }
+
+      @media (min-width: $desktop) {
+        font-size: $fs-clock_l;
+        letter-spacing: -5px;
+      }
+    }
+  }
+
+  &-location {
+    font-weight: $fw-bold;
+
+    @media (min-width: $desktop) {
+      font-size: 24px;
+      letter-spacing: 4.8px;
+    }
+  }
+}
+
+.clock__btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 115px;
+  padding: 4px;
+  margin-bottom: 40px;
+
+  background-color: $clr-100;
+  border-radius: 30px;
+  cursor: pointer;
+
+  &:hover &-icon {
+    background-color: #999;
+  }
+
+  @media (min-width: $tablet) {
+    width: 146px;
+    margin-bottom: 64px;
+    padding: 8px 9px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
+  }
+
+  &-text {
+    margin-left: 13px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 14px;
+    letter-spacing: 3.75px;
+    text-transform: uppercase;
+    font-weight: $fw-bold;
+
+    transition: flex 0.3s;
+
+    @media (min-width: $tablet) {
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 5px;
+      margin-left: 13px;
+    }
+  }
+
+  &-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $clr-900;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    transition: transform 0.3s, background-color 0.3s;
+
+    &-open {
+      transform: rotate(180deg);
+    }
+
+    @media (min-width: $tablet) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}

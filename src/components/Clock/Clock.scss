@@ -1,0 +1,50 @@
+@import '../../styles/variables';
+
+.clock {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow-y: hidden;
+
+  &-day {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../assets/mobile/bg-image-daytime.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-width: $tablet) {
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../assets/tablet/bg-image-daytime.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    @media (min-width: $desktop) {
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../assets/desktop/bg-image-daytime.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &-night {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../assets/mobile/bg-image-nighttime.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-width: $tablet) {
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../assets/tablet/bg-image-nighttime.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    @media (min-width: $desktop) {
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../assets/desktop/bg-image-nighttime.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &__data {
+    justify-self: flex-end;
+  }
+}

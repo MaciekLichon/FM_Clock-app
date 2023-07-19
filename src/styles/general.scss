@@ -1,0 +1,13 @@
+@import './variables';
+
+body {
+  font-family: $ff-regular;
+  font-weight: $fw-regular;
+  color: $clr-100;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+}
