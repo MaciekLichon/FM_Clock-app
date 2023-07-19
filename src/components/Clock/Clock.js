@@ -35,10 +35,9 @@ const Clock = () => {
     useEffect(() => {
 
         // FIRST API
-        fetch('http://worldtimeapi.org/api/ip')
+        fetch('https://worldtimeapi.org/api/ip')
             .then(response => response.json())
             .then(data => {
-                console.log('test');
                 setWorldTimeData({
                     time: formatTime(data.datetime),
                     abbreviation: data.abbreviation,
