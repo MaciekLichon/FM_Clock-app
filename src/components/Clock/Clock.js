@@ -35,21 +35,19 @@ const Clock = () => {
     useEffect(() => {
 
         // FIRST API
-        const fetchData = async () => {
-            await fetch('http://worldtimeapi.org/api/ip')
-                .then(response => response.json())
-                .then(data => {
-                    setWorldTimeData({
-                        time: formatTime(data.datetime),
-                        abbreviation: data.abbreviation,
-                        timezone: data.timezone,
-                        day_of_year: data.day_of_year,
-                        day_of_week: data.day_of_week,
-                        week_number: data.week_number,
-                    });
+        fetch('http://worldtimeapi.org/api/ip')
+            .then(response => response.json())
+            .then(data => {
+                console.log('test');
+                setWorldTimeData({
+                    time: formatTime(data.datetime),
+                    abbreviation: data.abbreviation,
+                    timezone: data.timezone,
+                    day_of_year: data.day_of_year,
+                    day_of_week: data.day_of_week,
+                    week_number: data.week_number,
                 });
-        }
-        fetchData();
+            });
 
         // SECOND API
         const ipBase = new Ipbase('ipb_live_HEjB398xzD0jtCbHCruiCXbKxP4ZSXsBBXJYZoaW')
